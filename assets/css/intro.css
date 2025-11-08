@@ -1,0 +1,227 @@
+/* Installation Steps */
+.installation-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.step {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 15px var(--shadow-color);
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px var(--shadow-color);
+}
+
+.step-number {
+    flex: 0 0 60px;
+    height: 60px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: background-color var(--transition-speed), transform var(--transition-speed);
+}
+
+.step:hover .step-number {
+    background-color: var(--accent-color);
+    transform: scale(1.1);
+}
+
+.step-content {
+    flex: 1;
+}
+
+.step-content h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.step-image {
+    flex: 0 0 200px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.step-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform var(--transition-speed);
+}
+
+.step:hover .step-image img {
+    transform: scale(1.05);
+}
+
+/* Prerequisites */
+.prerequisites {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 15px var(--shadow-color);
+}
+
+.prerequisites h2 {
+    margin-top: 0;
+}
+
+.prerequisites-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+.prerequisites-list li {
+    background-color: rgba(92, 219, 149, 0.1);
+    border-left: 3px solid var(--accent-color);
+    padding: 10px 15px;
+    border-radius: 0 5px 5px 0;
+    transition: background-color var(--transition-speed), transform var(--transition-speed);
+}
+
+.prerequisites-list li:hover {
+    background-color: rgba(92, 219, 149, 0.2);
+    transform: translateX(5px);
+}
+
+/* Troubleshooting */
+.troubleshooting {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 15px var(--shadow-color);
+}
+
+.troubleshooting h2 {
+    margin-top: 0;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 20px;
+    transition: border-color var(--transition-speed);
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+.faq-question {
+    font-weight: 500;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question i {
+    transition: transform var(--transition-speed);
+}
+
+.faq-question.active i {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    display: none;
+    transition: max-height var(--transition-speed), opacity var(--transition-speed);
+}
+
+.faq-answer.active {
+    display: block;
+}
+
+/* Download Section */
+.download-section {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 10px;
+    padding: 40px 20px;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: background-color var(--transition-speed);
+}
+
+.download-section h2 {
+    color: white;
+    border-bottom: none;
+    margin-top: 0;
+}
+
+.download-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    color: var(--primary-color);
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.download-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.download-button i {
+    font-size: 1.5rem;
+}
+
+/* Version Info */
+.version-info {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.version-info-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .step {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .step-number {
+        margin-bottom: 20px;
+    }
+    
+    .step-image {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
