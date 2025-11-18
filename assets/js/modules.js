@@ -5,11 +5,10 @@ const modules = [
         id: 1,
         name: "Leap Menu",
         category: "dungeons",
-        description: "Provides a custom menu for managing leap abilities in dungeons.",
+        description: "Provides a custom menu for spirit leap.",
         features: [
-            "Customizable leap settings",
-            "Quick access to leap abilities",
-            "Cooldown tracking"
+            "Displays player class",
+            "Displays player name"
         ],
         stats: {
             usage: "High",
@@ -20,10 +19,9 @@ const modules = [
         id: 2,
         name: "Custom Terminals GUI",
         category: "dungeons",
-        description: "Enhances the terminal interface in dungeons with additional information and better visuals.",
+        description: "Enhances the terminal interface in dungeons with better visuals.",
         features: [
             "Improved terminal visuals",
-            "Additional information display",
             "Faster interaction"
         ],
         stats: {
@@ -35,11 +33,10 @@ const modules = [
         id: 3,
         name: "AutoSell",
         category: "dungeons",
-        description: "Automatically sells unwanted items during dungeon runs.",
+        description: "Automatically sells salvagable items in trade menus.",
         features: [
-            "Configurable sell rules",
-            "Real-time item valuation",
-            "Safety measures to prevent accidental sales"
+            "Configurable items to sell",
+            "Safety measures to prevent accidental sales (starred items)"
         ],
         stats: {
             usage: "High",
@@ -50,11 +47,10 @@ const modules = [
         id: 4,
         name: "Find Correct Livid",
         category: "dungeons",
-        description: "Helps identify the correct Livid in the Livid Horror puzzle.",
+        description: "Helps identify the correct color of Livid needed to be killed.",
         features: [
             "Visual highlighting of correct Livid",
-            "Audio cues",
-            "Works in all difficulty modes"
+            "Faster than other mods"
         ],
         stats: {
             usage: "Medium",
@@ -99,7 +95,7 @@ const modules = [
         features: [
             "Visual timer display",
             "Color-coded duration indicators",
-            "Customizable alert thresholds"
+            "Customizable UI position"
         ],
         stats: {
             usage: "High",
@@ -110,11 +106,10 @@ const modules = [
         id: 8,
         name: "Key Highlighter",
         category: "dungeons",
-        description: "Highlights keys and chests in dungeons.",
+        description: "Highlights wither keys and blood key in dungeon runs.",
         features: [
-            "Color-coded key highlighting",
-            "Chest location tracking",
-            "Distance indicators"
+            "Customizable highlight colors",
+            "Highlight through walls"
         ],
         stats: {
             usage: "High",
@@ -125,11 +120,9 @@ const modules = [
         id: 9,
         name: "Leap Announce",
         category: "dungeons",
-        description: "Announces leap usage to party members.",
+        description: "Announces in party chat when you to someone",
         features: [
-            "Customizable messages",
-            "Cooldown tracking",
-            "Role-based announcements"
+            "Fast response time"
         ],
         stats: {
             usage: "Medium",
@@ -155,11 +148,9 @@ const modules = [
         id: 11,
         name: "Salvageable Item Highlighter",
         category: "dungeons",
-        description: "Highlights items that can be salvaged for materials.",
+        description: "Highlights items that can be salvaged.",
         features: [
-            "Rarity-based highlighting",
-            "Salvage value display",
-            "Auto-loot options"
+            "Automatically highlights when in specific menus"
         ],
         stats: {
             usage: "Medium",
@@ -170,11 +161,10 @@ const modules = [
         id: 12,
         name: "Secret Click Highlight",
         category: "dungeons",
-        description: "Highlights secret clickable objects in dungeons.",
+        description: "Highlights secret clicked in dungeons.",
         features: [
-            "Visual highlighting",
-            "Distance indicators",
-            "Secret type identification"
+            "Highlight through walls",
+            "Customizable highlight colors"
         ],
         stats: {
             usage: "Low",
@@ -185,11 +175,11 @@ const modules = [
         id: 13,
         name: "Star Mob Highlighter",
         category: "dungeons",
-        description: "Highlights star mobs in dungeons for prioritization.",
+        description: "Highlights star mobs in dungeons for faster blood rush.",
         features: [
-            "Color-coded highlighting",
-            "Health bar display",
-            "Distance tracking"
+            "Highlight through walls",
+            "Customizable highlight colors",
+            "Works with fel hitboxes"
         ],
         stats: {
             usage: "High",
@@ -217,12 +207,11 @@ const modules = [
         id: 15,
         name: "Auto Fish",
         category: "fishing",
-        description: "Automatically catches fish for you, saving time and effort.",
+        description: "Automatically throw and reel fishing rod",
         features: [
-            "AFK fishing support",
-            "Customizable cast distance",
-            "Treasure chest detection",
-            "Auto-loot functionality"
+            "AFK support (autoshift)",
+            "Customizable delay settings",
+            "Supports both water and lava fishing"
         ],
         stats: {
             usage: "Very High",
@@ -235,11 +224,10 @@ const modules = [
         id: 16,
         name: "Kuudra Direction",
         category: "kuudra",
-        description: "Shows the direction of Kuudra during fights.",
+        description: "Shows the direction of Kuudra in phase five.",
         features: [
-            "3D direction indicator",
-            "Distance tracking",
-            "Phase-specific information"
+            "Tile display",
+            "Fast response time"
         ],
         stats: {
             usage: "High",
@@ -253,8 +241,7 @@ const modules = [
         description: "Displays the hitbox of Kuudra for easier targeting.",
         features: [
             "Visual hitbox overlay",
-            "Weak point highlighting",
-            "Damage feedback"
+            "Customizable highlighth colors"
         ],
         stats: {
             usage: "Medium",
@@ -280,11 +267,11 @@ const modules = [
         id: 19,
         name: "Dyname Pearl Lineup",
         category: "kuudra",
-        description: "Helps line up dynamite pearls for optimal damage.",
+        description: "Highlight the throw spot of ender pearl anywhere in kuudra",
         features: [
             "Trajectory prediction",
             "Optimal angle indicator",
-            "Distance markers"
+            "Auto adapt with no pre"
         ],
         stats: {
             usage: "Medium",
@@ -295,11 +282,9 @@ const modules = [
         id: 20,
         name: "Build Piles",
         category: "kuudra",
-        description: "Assists with building piles during Kuudra fights.",
+        description: "Hightlight all six build piles in kuudra phase 2",
         features: [
-            "Optimal placement guide",
-            "Material counter",
-            "Build speed multiplier"
+            "One-click toggle no extra settings"
         ],
         stats: {
             usage: "Medium",
@@ -310,11 +295,9 @@ const modules = [
         id: 21,
         name: "Fresh Message",
         category: "kuudra",
-        description: "Alerts when Kuudra becomes vulnerable to fresh damage.",
+        description: "Alerts in party chat when you get a fresh tools",
         features: [
-            "Visual and audio alerts",
-            "Duration timer",
-            "Damage multiplier display"
+            "Immediate notification"
         ],
         stats: {
             usage: "High",
@@ -325,11 +308,9 @@ const modules = [
         id: 22,
         name: "Block Useless Perk",
         category: "kuudra",
-        description: "Blocks useless perks from appearing during Kuudra fights.",
+        description: "Blocks useless perks from appearing and clicking during Kuudra fights.",
         features: [
-            "Customizable perk filtering",
-            "Perk priority system",
-            "Perk recommendation"
+            "One-click toggle no extra settings"
         ],
         stats: {
             usage: "Medium",
@@ -340,11 +321,11 @@ const modules = [
         id: 23,
         name: "Chest Open Notification",
         category: "kuudra",
-        description: "Notifies when chests are opened during Kuudra fights.",
+        description: "Notifies when chests are opened with auto open chest",
         features: [
-            "Real-time notifications",
-            "Chest type identification",
-            "Loot quality assessment"
+            "Auto open chest - faster than IQ",
+            "Auto reqeueue at four",
+            "Customizable notification prefix"
         ],
         stats: {
             usage: "Low",
@@ -355,11 +336,10 @@ const modules = [
         id: 24,
         name: "Pearl Cancel",
         category: "kuudra",
-        description: "Allows canceling pearl throws during Kuudra fights.",
+        description: "Cancels/disables right click animation when holding ender pearls",
         features: [
-            "Quick cancel hotkey",
-            "Pearl trajectory visualization",
-            "Cancel confirmation"
+            "Cheats - use at your own risk",
+            "Pig and horse pets are not required for pearl cancel"
         ],
         stats: {
             usage: "Medium",
@@ -370,11 +350,10 @@ const modules = [
         id: 25,
         name: "Poison Arrow Tracker",
         category: "kuudra",
-        description: "Tracks poison arrows during Kuudra fights.",
+        description: "Tracks poison arrows in players inventroy",
         features: [
-            "Arrow trajectory prediction",
-            "Impact point highlighting",
-            "Dodge recommendation"
+            "Tracks both twilight and toxic arrows",
+            "Auto announce if you don't have toxic arrows before kuudra phase 1 starts"
         ],
         stats: {
             usage: "High",
@@ -385,11 +364,10 @@ const modules = [
         id: 26,
         name: "Auto Refill Pearl",
         category: "kuudra",
-        description: "Automatically refills pearls from the ender chest during Kuudra fights.",
+        description: "Automatically refills pearls from sacks",
         features: [
-            "Customizable refill threshold",
-            "Pearl type detection",
-            "Refill notification"
+            "Auto detection",
+            "Counted before refilling"
         ],
         stats: {
             usage: "High",
@@ -404,8 +382,6 @@ const modules = [
         category: "render",
         description: "Hides lightning effects to improve visibility.",
         features: [
-            "Toggle lightning rendering",
-            "Partial or full lightning hiding",
             "Performance optimization"
         ],
         stats: {
@@ -419,9 +395,7 @@ const modules = [
         category: "render",
         description: "Filters out useless chat messages to reduce clutter.",
         features: [
-            "Customizable message filters",
-            "Keyword-based filtering",
-            "Message log for review"
+            "Remove spam messages"
         ],
         stats: {
             usage: "High",
@@ -434,9 +408,8 @@ const modules = [
         category: "render",
         description: "Adds custom capes to your character.",
         features: [
-            "Multiple cape designs",
-            "Cape animation",
-            "Player-specific cape settings"
+            "Support animated capes",
+            "Customizable designs"
         ],
         stats: {
             usage: "Low",
@@ -449,9 +422,8 @@ const modules = [
         category: "render",
         description: "Applies a dark mode to the game interface.",
         features: [
-            "Customizable darkness level",
-            "Night vision enhancement",
-            "Performance optimization"
+            "Customizable opacity",
+            "Protect players' eyes"
         ],
         stats: {
             usage: "High",
@@ -461,12 +433,10 @@ const modules = [
     {
         id: 31,
         name: "Etherwarp Overlay",
-        category: "render",
-        description: "Adds an overlay for Etherwarp ability usage.",
+        description: "Adds an overlay for etherwarp landing location.",
         features: [
-            "Ability cooldown display",
-            "Range indicator",
-            "Target selection assistance"
+            "Customizable overlay colors",
+            "Show fail and sync with server"
         ],
         stats: {
             usage: "Medium",
@@ -479,9 +449,7 @@ const modules = [
         category: "render",
         description: "Increases brightness in dark areas without gamma changes.",
         features: [
-            "Customizable brightness levels",
-            "Area-specific brightness control",
-            "Performance optimization"
+            "Eye protection"
         ],
         stats: {
             usage: "High",
@@ -492,11 +460,10 @@ const modules = [
         id: 33,
         name: "Name Tag",
         category: "render",
-        description: "Enhances player name tags with additional information.",
+        description: "Render all players' nametag anywhere",
         features: [
-            "Health display",
-            "Class identification",
-            "Friend/foe highlighting"
+            "Show through walls",
+            "Customizable sizes"
         ],
         stats: {
             usage: "Medium",
@@ -507,11 +474,11 @@ const modules = [
         id: 34,
         name: "No Debuff",
         category: "render",
-        description: "Removes visual debuff effects while maintaining functionality.",
+        description: "Removes visual debuff effects (client-side)",
         features: [
-            "Selective debuff hiding",
-            "Debuff duration display",
-            "Performance optimization"
+            "No blindness effect",
+            "No fire overlay when on fire",
+            "Clear visual under water and lava"
         ],
         stats: {
             usage: "Medium",
@@ -524,9 +491,8 @@ const modules = [
         category: "render",
         description: "Disables the hurt camera effect when taking damage.",
         features: [
-            "Smooth camera during combat",
-            "Damage feedback alternatives",
-            "Customizable intensity"
+            "Stop camera from shaking",
+            "Improves overall gaming experience"
         ],
         stats: {
             usage: "High",
@@ -537,11 +503,11 @@ const modules = [
         id: 36,
         name: "Player ESP",
         category: "render",
-        description: "Shows player positions through walls.",
+        description: "Shows player hitboxes through walls.",
         features: [
-            "Color-coded player indicators",
-            "Distance tracking",
-            "Class-specific icons"
+            "Customizable colors",
+            "Customizable highlight styles (outline, filled)",
+            "Highlight through walls"
         ],
         stats: {
             usage: "Very High",
@@ -552,11 +518,10 @@ const modules = [
         id: 37,
         name: "Miniboss Highlighter",
         category: "render",
-        description: "Highlights minibosses in the game world.",
+        description: "Highlights nearby minibosses",
         features: [
-            "Visual highlighting",
-            "Health bar display",
-            "Distance tracking"
+            "Customizable highlight colors",
+            "Detect even others' minibosses"
         ],
         stats: {
             usage: "Medium",
@@ -569,11 +534,10 @@ const modules = [
         id: 38,
         name: "Fast Hot Key",
         category: "skyblock",
-        description: "Provides quick access to frequently used items and abilities.",
+        description: "Provides quick access to command without typing.",
         features: [
             "Customizable hotkeys",
-            "Context-sensitive actions",
-            "Macro support"
+            "Customeizable commands and layouts"
         ],
         stats: {
             usage: "High",
@@ -586,9 +550,8 @@ const modules = [
         category: "skyblock",
         description: "Shows an overview of your storage contents.",
         features: [
-            "Item category filtering",
-            "Quantity tracking",
-            "Quick access to storage"
+            "Allow to take item out by one click",
+            "Favourite containers system"
         ],
         stats: {
             usage: "Medium",
@@ -599,11 +562,10 @@ const modules = [
         id: 40,
         name: "Auto Experiment",
         category: "skyblock",
-        description: "Automates the experimentation process on items.",
+        description: "Automatically do the experimentation table minigames",
         features: [
-            "Optimal experiment selection",
-            "Experiment cost calculation",
-            "Result prediction"
+            "Auto Exit",
+            "Customizable click delays"
         ],
         stats: {
             usage: "Medium",
@@ -616,9 +578,8 @@ const modules = [
         category: "skyblock",
         description: "Automatically sprints when moving forward.",
         features: [
-            "Intelligent sprint activation",
-            "Stamina management",
-            "Combat-specific behavior"
+            "One-click toggle",
+            "No configuration needed"
         ],
         stats: {
             usage: "Very High",
@@ -631,9 +592,9 @@ const modules = [
         category: "skyblock",
         description: "Adds custom chat commands for various functions.",
         features: [
-            "Custom command creation",
-            "Macro support",
-            "Command aliases"
+            "Prefix -> !",
+            "Queue instances command",
+            "Added !disband"
         ],
         stats: {
             usage: "Medium",
@@ -647,8 +608,7 @@ const modules = [
         description: "Tracks the cooldown of Flux Flare ability.",
         features: [
             "Visual timer display",
-            "Ready notification",
-            "Usage history"
+            "Check in range"
         ],
         stats: {
             usage: "Low",
@@ -659,11 +619,11 @@ const modules = [
         id: 44,
         name: "Mark Location",
         category: "skyblock",
-        description: "Allows marking locations on the map.",
+        description: "Allows marking the locations that you're looking at.",
         features: [
-            "Customizable markers",
-            "Location notes",
-            "Waypoint navigation"
+            "Customizable beacon beam colors",
+            "Works with Waypoint Grabber perfectly",
+            "Send coordinates to party chat"
         ],
         stats: {
             usage: "Medium",
@@ -674,11 +634,11 @@ const modules = [
         id: 45,
         name: "Search Bar",
         category: "skyblock",
-        description: "Adds a search bar to various in-game menus.",
+        description: "Search items in your inventory and storage without finding them manually.",
         features: [
             "Quick item search",
-            "Category filtering",
-            "Recent searches history"
+            "Allow lore filter",
+            "Calculation supports"
         ],
         stats: {
             usage: "High",
@@ -691,9 +651,7 @@ const modules = [
         category: "skyblock",
         description: "Assists with the Super Pairs minigame.",
         features: [
-            "Card pairing suggestions",
-            "Game state tracking",
-            "Score optimization"
+            "Highlight all pairs"
         ],
         stats: {
             usage: "Low",
@@ -704,11 +662,11 @@ const modules = [
         id: 47,
         name: "Waypoint Grabber",
         category: "skyblock",
-        description: "Grabs waypoints from various sources.",
+        description: "Grabs waypoints/coordinates from party chat and generates beacon beams.",
         features: [
-            "Map waypoint extraction",
-            "Shareable waypoint codes",
-            "Waypoint organization"
+            "Fast and accurate",
+            "Customizable beacon beam colors",
+            "Highlight the location through walls"
         ],
         stats: {
             usage: "Medium",
